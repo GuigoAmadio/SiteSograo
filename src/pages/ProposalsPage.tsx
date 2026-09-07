@@ -7,7 +7,6 @@ export function ProposalsPage() {
     <>
       <PageHero
         eyebrow="Mandato federal"
-        title="Propostas"
         lead="Hospital Metropolitano, farmácia solidária e mobilidade regional. Clique no card e leia embaixo."
       />
       <ProposalCards />
