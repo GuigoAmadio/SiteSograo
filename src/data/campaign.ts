@@ -1,159 +1,300 @@
-/** Troque nome, número, WhatsApp, Instagram e fotos em /public/images. */
+/** Troque WhatsApp, Instagram e fotos em /public/images. */
 export const campaign = {
-  nickname: 'Sogrão',
-  fullName: 'Carlos Henrique Mendes',
-  office: 'Candidato a Vereador',
-  number: '45678',
-  numberDisplay: '45.678',
-  party: 'Unidos pela Cidade',
-  city: 'Nossa Cidade',
-  slogan: 'Gente que resolve. Gente que está presente.',
-  headline: 'Um vereador que conhece a sua rua — e luta por ela.',
+  nickname: 'Elcio Batista',
+  firstName: 'Elcio',
+  lastName: 'Batista',
+  fullName: 'Dr. Elcio Batista',
+  office: 'Candidato a Deputado Federal',
+  number: '7026',
+  numberDisplay: '7026',
+  party: 'Avante',
+  city: 'Campinas',
+  slogan: 'Trabalho de Verdade. Resultados que Transformam.',
+  headline: 'Dr. Elcio Batista para deputado federal',
   subheadline:
-    'Não enfrente sozinho o abandono da sua rua, da saúde e da escola do seu filho. O Sogrão está na campanha para transformar reclamação em obra, denúncia em fiscalização e vizinhança em força política.',
-  instagram: 'sograo.oficial',
-  instagramUrl: 'https://www.instagram.com/sograo.oficial/',
+    'Advogado há mais de 30 anos. Vereador duas vezes em Campinas, autor de mais de 30 leis. Articulou 100 mil assinaturas pela delegacia de combate à pedofilia e à violência sexual. Agora disputa a Câmara Federal por Campinas e pela região.',
+  instagram: 'elcio.oficial',
+  instagramUrl: 'https://www.instagram.com/elcio.oficial/',
   whatsapp: '5511999999999',
-  email: 'comite@sograo.com.br',
-  address: 'Comitê Central — Rua da Praça, 100 — Centro',
+  email: 'comite@elcio.com.br',
+  address: 'Comitê — Campinas, SP',
   hours: 'Segunda a sábado, das 8h às 20h',
   year: 2026,
+  cnpj: '68.578.206/0001-37',
+} as const
+
+export const aboutIntro = {
+  title: 'Conheça melhor em quem está votando:',
+  paragraphs: [
+    'Dr. Elcio Batista é advogado há mais de 30 anos, casado com Ângela Batista e pai de três filhos. Foi vereador duas vezes em Campinas: mais de 30 leis, 100 mil assinaturas pela delegacia de combate à pedofilia e à violência sexual, semáforos sonoros e o cadastro único de pessoas desaparecidas.',
+    'Entre as leis, estão o banco de ração, a Semana de Enfrentamento à Pedofilia, a Bíblia, a Constituição e o Código de Defesa do Consumidor em braile, e a máscara obrigatória para quem manuseia alimento. Criou o banco de alimentos com as sobras do CEASA. Como deputado federal, luta pelo Hospital Metropolitano, pela farmácia solidária e por transporte regional.',
+  ],
 } as const
 
 export const nav = [
-  { href: '#inicio', label: 'Início' },
-  { href: '#candidato', label: 'Candidato' },
-  { href: '#trabalhos', label: 'Trabalhos' },
-  { href: '#propostas', label: 'Propostas' },
-  { href: '#instagram', label: 'Instagram' },
-  { href: '#faq', label: 'Dúvidas' },
+  { href: '/', label: 'Início' },
+  { href: '/projetos', label: 'Projetos' },
+  { href: '/propostas', label: 'Propostas' },
+  { href: '/#instagram', label: 'Instagram' },
+  { href: '/#faq', label: 'Dúvidas' },
 ] as const
-
-export const situations = [
-  {
-    icon: 'street',
-    title: 'Rua sem asfalto ou sem luz?',
-    text: 'Você pede, protocola, espera — e o buraco, o esgoto e o poste queimado continuam no mesmo lugar.',
-  },
-  {
-    icon: 'health',
-    title: 'UBS lotada e sem médico?',
-    text: 'Fila de madrugada, falta de remédio e exame marcado para daqui a meses. Saúde básica não pode ser privilégio.',
-  },
-  {
-    icon: 'school',
-    title: 'Escola caindo e sem merenda?',
-    text: 'Seu filho merece sala digna, transporte e professor em sala — não improviso todo ano letivo.',
-  },
-  {
-    icon: 'safety',
-    title: 'Praça tomada e sem policiamento?',
-    text: 'Família deixa de sair à noite. Comércio fecha mais cedo. Segurança começa com presença e iluminação.',
-  },
-] as const
-
-export const differentials = [
-  {
-    title: 'Presença de bairro',
-    text: 'Não aparece só em ano de eleição. O Sogrão anda a comunidade, anota o pedido e cobra o poder público.',
-  },
-  {
-    title: 'Fiscalização de verdade',
-    text: 'Vereador existe para fiscalizar. Orçamento, obra parada e cargo fantasma entram na pauta — com nome e número.',
-  },
-  {
-    title: 'Linguagem clara',
-    text: 'Sem juridiquês de gabinete. Você entende o que foi feito, o que falta e quanto custou.',
-  },
-] as const
-
-export const about = {
-  eyebrow: 'Quem é o candidato',
-  title: 'Do portão da vizinhança para a Câmara',
-  lead: 'O Sogrão construiu reputação do jeito mais difícil: resolvendo o problema do vizinho antes de pedir voto.',
-  body: 'Carlos Henrique Mendes, o Sogrão, é liderança comunitária, pai de família e o tipo de gente que a cidade já conhece pelo primeiro nome. Depois de anos organizando mutirão, cobrando UBS e mediando o que a prefeitura deixava para depois, decidiu dar o passo que a rua pedia: ser voz permanente na Câmara Municipal.',
-  bullets: [
-    'Mais de 15 anos de mobilização em associações de bairro',
-    'Atuação em saúde da família, educação e regularização fundiária',
-    'Atendimento presencial no comitê e digital pelo WhatsApp',
-  ],
-}
 
 export const works = [
   {
-    tag: 'Saúde',
-    title: 'Mutirão que reabriu o atendimento da UBS do Jardim',
-    text: 'Organização de moradores, abaixo-assinado e pressão na Secretaria. Resultado: médico três vezes por semana e farmácia reabastecida.',
-    image: '/images/saude.jpg',
-    year: '2024',
-  },
-  {
-    tag: 'Educação',
-    title: 'Cobertura da quadra e merenda regular na EM Professor Lima',
-    text: 'Reunião com direção, pais e vereança. A cobertura saiu do papel e a merenda deixou de faltar na terceira semana do mês.',
-    image: '/images/educacao.jpg',
-    year: '2024',
-  },
-  {
-    tag: 'Infraestrutura',
-    title: 'Asfalto e drenagem na Rua das Palmeiras após 9 anos de lama',
-    text: 'Mapeamento de 42 casas alagadas, dossiê fotográfico e protocolo semanal até a tapa-buraco virar recape.',
-    image: '/images/obra.jpg',
-    year: '2023',
-  },
-  {
-    tag: 'Esporte',
-    title: 'Campo de várzea com alambrado, vestiário e horários para as meninas',
-    text: 'O campinho deixou de ser mato. Hoje tem grade, água e espaço reservado para o time feminino no fim de semana.',
-    image: '/images/esporte.jpg',
-    year: '2023',
-  },
-  {
-    tag: 'Assistência',
-    title: 'Cesta e documento: mutirão para quem estava invisível no CadÚnico',
-    text: '120 famílias atualizaram cadastro e passaram a acessar benefício que já era direito — só faltava alguém sentar e ajudar.',
+    tag: 'Proteção',
+    short: 'Delegacia',
+    icon: 'shield',
+    title: '100 mil assinaturas pela delegacia de combate à pedofilia',
+    text: 'Como vereador, articulou abaixo-assinado para trazer a Campinas a delegacia de combate à pedofilia e à violência sexual contra homem, criança e adolescente.',
     image: '/images/assistencia.jpg',
-    year: '2025',
+    year: 'Mandato',
+    url: '',
   },
   {
-    tag: 'Meio ambiente',
-    title: 'Nascente limpa e horta comunitária no fundo do bairro',
-    text: 'Mutirão de 80 pessoas, parceria com escola e cerca para o lixo parar de ir para o córrego.',
+    tag: 'Infância',
+    short: 'Comissão',
+    icon: 'child',
+    title: 'Presidência da Comissão da Criança e do Adolescente',
+    text: 'Conduziu por quatro anos o colegiado da Câmara de Campinas com foco em proteção integral — não em foto de sessão solene.',
+    image: '/images/educacao.jpg',
+    year: '4 anos',
+    url: '',
+  },
+  {
+    tag: 'Leis',
+    short: '30+ leis',
+    icon: 'law',
+    title: 'Mais de 30 leis: ração, braile e semana de enfrentamento',
+    text: 'Autor do banco de ração, da Semana de Combate e Enfrentamento à Pedofilia, da Bíblia, da Constituição Federal e do Código de Defesa do Consumidor em braile, e da lei que obriga máscara para quem manuseia alimento.',
+    image: '/images/obra.jpg',
+    year: 'Câmara',
+    url: '',
+  },
+  {
+    tag: 'Acessibilidade',
+    short: 'Semáforos',
+    icon: 'traffic',
+    title: 'Semáforos sonoros para pessoas com deficiência visual',
+    text: 'Trouxe para Campinas o semáforo que avisa no ouvido quem não enxerga o verde. Travessia com dignidade, não com sorte.',
     image: '/images/ambiente.jpg',
-    year: '2025',
+    year: 'Cidade',
+    url: '',
+  },
+  {
+    tag: 'Pessoas',
+    short: 'Desaparecidos',
+    icon: 'search',
+    title: 'Cadastro único municipal de pessoas desaparecidas',
+    text: 'Criou em Campinas o cadastro para a família deixar de bater de porta em porta sem um registro oficial que una a rede de busca.',
+    image: '/images/comunidade.jpg',
+    year: 'Lei',
+    url: '',
+  },
+  {
+    tag: 'Fome',
+    short: 'Alimentos',
+    icon: 'food',
+    title: 'Banco de alimentos: sobra do CEASA na mesa de quem precisa',
+    text: 'Criador do projeto que destina as sobras do CEASA às comunidades carentes — comida que ia para o lixo passa a ir para o prato.',
+    image: '/images/ig1.jpg',
+    year: 'CEASA',
+    url: '',
+  },
+] as const
+
+export const projectGroups = [
+  {
+    id: 'leis',
+    kicker: 'Na Câmara',
+    title: 'Leis efetivadas',
+    lead: 'Autor de mais de 30 leis em Campinas. Abaixo, as que a campanha destaca — já viraram regra, não recado de palanque.',
+    icon: 'scroll',
+    stamp: 'Lei',
+    items: [
+      {
+        icon: 'paw',
+        title: 'Banco de ração',
+        text: 'Lei que criou o banco de ração em Campinas: proteção animal com política pública, não com campanha de um dia.',
+        url: '',
+      },
+      {
+        icon: 'calendar',
+        title: 'Semana de Combate e Enfrentamento à Pedofilia',
+        text: 'Calendário oficial da cidade para não deixar a pauta só no discurso quando a câmera aparece.',
+        url: '',
+      },
+      {
+        icon: 'book',
+        title: 'Bíblia, Constituição e CDC em braile',
+        text: 'A lei também se lê com a ponta dos dedos: Constituição Federal, Código de Defesa do Consumidor e a Bíblia em braile.',
+        url: '',
+      },
+      {
+        icon: 'mask',
+        title: 'Máscara para quem manuseia alimento',
+        text: 'Obrigação de máscara para quem lida com comida. Higiene na lei, não no aviso colado na parede.',
+        url: '',
+      },
+      {
+        icon: 'search',
+        title: 'Cadastro único de pessoas desaparecidas',
+        text: 'Registro oficial para a família deixar de bater de porta em porta sem um canal que una a rede de busca.',
+        url: '',
+      },
+    ],
+  },
+  {
+    id: 'atos',
+    kicker: 'Pressão e resultado',
+    title: 'Ato do mandato',
+    lead: 'O que não nasceu só de plenário: mobilização na rua para Campinas ter o que ainda não tinha.',
+    icon: 'megaphone',
+    stamp: 'Ato',
+    items: [
+      {
+        icon: 'shield',
+        title: '100 mil assinaturas pela delegacia de combate à pedofilia',
+        text: 'Como vereador, articulou o abaixo-assinado para trazer a Campinas a delegacia de combate à pedofilia e à violência sexual contra homem, criança e adolescente.',
+        url: '',
+      },
+    ],
+  },
+  {
+    id: 'cidade',
+    kicker: 'O que a cidade ganhou',
+    title: 'Serviço na rua',
+    lead: 'Projeto que saiu do papel e passou a valer no cotidiano de quem mora em Campinas.',
+    icon: 'city',
+    stamp: 'Cidade',
+    items: [
+      {
+        icon: 'traffic',
+        title: 'Semáforos sonoros para deficiência visual',
+        text: 'Trouxe para Campinas o semáforo que avisa no ouvido quem não enxerga o verde. Travessia com dignidade, não com sorte.',
+        url: '',
+      },
+      {
+        icon: 'food',
+        title: 'Banco de alimentos com a sobra do CEASA',
+        text: 'Criador do projeto que destina as sobras do CEASA às comunidades — comida que ia para o lixo passa a ir para o prato.',
+        url: '',
+      },
+    ],
+  },
+  {
+    id: 'cargos',
+    kicker: 'Dois mandatos de vereador',
+    title: 'Função no último mandato',
+    lead: 'Onde ele sentou na Câmara — e o que isso mudou na pauta da Casa.',
+    icon: 'users',
+    stamp: 'Cargo',
+    items: [
+      {
+        icon: 'child',
+        title: 'Presidência da Comissão da Criança e do Adolescente',
+        text: 'Conduziu por quatro anos o colegiado da Câmara de Campinas com foco em proteção integral.',
+        url: '',
+      },
+      {
+        icon: 'gavel',
+        title: 'Corregedor da Câmara Municipal',
+        text: 'Foi corregedor da Casa no mandato de vereador: fiscalizar o Legislativo, não só votar projeto.',
+        url: '',
+      },
+      {
+        icon: 'stamp',
+        title: 'Comissão de Constituição e Legalidade',
+        text: 'Membro titular da comissão que lê o texto da lei antes de ela virar voto — o filtro jurídico da Câmara.',
+        url: '',
+      },
+    ],
+  },
+  {
+    id: 'gestao',
+    kicker: 'Fora do plenário',
+    title: 'Gestão na prefeitura',
+    lead: 'Administração de distrito e coordenação das regionais: mandato e gestão no mesmo currículo.',
+    icon: 'building',
+    stamp: 'Gestão',
+    items: [
+      {
+        icon: 'building',
+        title: 'Administrador regional',
+        text: 'Foi administrador regional em Campinas: o recado da prefeitura no distrito, não só o gabinete no centro.',
+        url: '',
+      },
+      {
+        icon: 'users',
+        title: 'Diretor da COAR',
+        text: 'Depois dirigiu a Coordenação das Administrações Regionais e Subprefeituras — as regionais falando com a mesma mesa.',
+        url: '',
+      },
+    ],
   },
 ] as const
 
 export const proposals = [
   {
     num: '01',
-    title: 'Saúde na porta',
-    text: 'UBS com horário estendido, agente de saúde em toda microárea e farmácia de alto custo com fila transparente.',
+    icon: 'hospital',
+    title: 'Hospital Metropolitano de Campinas',
+    text: 'Mais estrutura, especialidades e atendimento digno para a região.',
+    detail:
+      'Campinas e as cidades vizinhas não podem depender de fila e de deslocamento para ter especialidade. Como deputado federal, o Elcio vai lutar por estrutura, mais especialidades e atendimento digno no Hospital Metropolitano — hospital de verdade para quem mora na região, não só no mapa da campanha.',
   },
   {
     num: '02',
-    title: 'Escola que funciona',
-    text: 'Merenda de verdade, ar-condicionado nas salas de lata e transporte escolar que não deixa aluno para trás.',
+    icon: 'pharmacy',
+    title: 'Farmácia solidária',
+    text: 'Medicamento de uso contínuo para quem mais precisa.',
+    detail:
+      'Remédio contínuo não pode ser luxo. A farmácia solidária é a frente para aproximar medicamento de quem não consegue pagar o preço da rua. O Elcio já tratou isso no mandato municipal; agora a pauta sobe para Brasília, com foco em acesso, regularidade e quem está no fim da fila.',
   },
   {
     num: '03',
-    title: 'Rua digna',
-    text: 'Plano de tapa-buraco com prazo público, drenagem nos pontos de alagamento e iluminação LED em toda via coletora.',
+    icon: 'bus',
+    title: 'Transporte e mobilidade regional',
+    text: 'Integração entre cidades e transporte de qualidade.',
+    detail:
+      'Quem vive na região metropolitana perde hora em ônibus ruim e em cidade que não conversa com a outra. A proposta é investimento, integração entre municípios e qualidade no deslocamento — trabalho, estudo e saúde no mesmo corredor, não três passagens e três filas.',
+  },
+] as const
+
+export const instagramVideos = [
+  {
+    id: 'escala',
+    src: '/videos/escala-6x1.mp4',
+    caption: 'Escala 6x1: o que você acha?',
   },
   {
-    num: '04',
-    title: 'Mulher em segurança',
-    text: 'Casa de passagem, iluminação em ponto de ônibus e fiscalização de medida protetiva junto à rede municipal.',
+    id: 'omissao',
+    src: '/videos/chega-de-omissao.mp4',
+    caption: 'Chega de omissão.',
   },
   {
-    num: '05',
-    title: 'Trabalho no bairro',
-    text: 'Qualificação no CRAS, feira do empreendedor e desburocratização para o comércio de esquina.',
+    id: 'cury',
+    src: '/videos/apoio-augusto-cury.mp4',
+    caption: 'Receber o apoio de Augusto Cury fortalece ainda mais a nossa caminhada.',
   },
   {
-    num: '06',
-    title: 'Câmara aberta',
-    text: 'Prestação de contas mensal no Instagram e no comitê. Você vai saber o que o vereador votou — e por quê.',
+    id: 'direitos',
+    src: '/videos/direitos-trabalhistas.mp4',
+    caption: 'Direitos trabalhistas não podem virar moeda de troca.',
+  },
+  {
+    id: 'divergencia',
+    src: '/videos/divergencia-intolerancia.mp4',
+    caption: 'Quando a divergência vira intolerância e quem pensa diferente passa a ser tratado como inimigo.',
+  },
+  {
+    id: 'reino',
+    src: '/videos/reino-dividido.mp4',
+    caption: 'Todo reino dividido contra si mesmo não se sustenta.',
+  },
+  {
+    id: 'bastidor',
+    src: '/videos/bastidor.mp4',
+    caption: 'Bastidor da campanha.',
   },
 ] as const
 
@@ -161,99 +302,99 @@ export const instagramPosts = [
   {
     id: '1',
     image: '/images/ig1.jpg',
-    caption: 'Mutirão no Jardim Esperança. Quando a rua se junta, a prefeitura escuta.',
+    caption: 'Banco de alimentos: a sobra do CEASA tem que ir para a comunidade, não para o lixo.',
     likes: 428,
     comments: 37,
-    date: '12 ago',
+    date: 'Campinas',
   },
   {
     id: '2',
     image: '/images/ig2.jpg',
-    caption: 'Na UBS cedo: lista de faltas da farmácia para protocolar amanhã.',
+    caption: 'Farmácia solidária é o projeto da vez. Remédio contínuo não pode ser luxo.',
     likes: 512,
     comments: 64,
-    date: '9 ago',
+    date: 'Saúde',
   },
   {
     id: '3',
     image: '/images/ig3.jpg',
-    caption: 'Conversa com os professores da EM Lima. Educação não é discurso de palanque.',
+    caption: 'Quatro anos presidindo a Comissão da Criança e do Adolescente. Proteção é pauta, não campanha.',
     likes: 389,
     comments: 21,
-    date: '5 ago',
+    date: 'Câmara',
   },
   {
     id: '4',
     image: '/images/ig4.jpg',
-    caption: 'Reunião no comitê: prioridades do mês saíram da assembleia, não do gabinete.',
+    caption: 'Mais de 30 leis. Constituição e Código do Consumidor em braile: a lei também se lê com a ponta dos dedos.',
     likes: 276,
     comments: 18,
-    date: '1 ago',
+    date: 'Leis',
   },
   {
     id: '5',
     image: '/images/ig6.jpg',
-    caption: 'Caminhada no centro. Quem quiser falar com o Sogrão, é só chegar.',
+    caption: '100 mil assinaturas pela delegacia de combate à pedofilia em Campinas.',
     likes: 631,
     comments: 82,
-    date: '28 jul',
+    date: 'Proteção',
   },
   {
     id: '6',
     image: '/images/ig5.jpg',
-    caption: 'Amanhecer no campo: esporte de base é política pública, não favor.',
+    caption: 'Semáforo sonoro: a cidade precisa avisar quem não enxerga o sinal verde.',
     likes: 354,
     comments: 29,
-    date: '22 jul',
+    date: 'Acesso',
   },
 ] as const
 
 export const testimonials = [
   {
-    name: 'Dona Aparecida',
-    role: 'Moradora do Jardim Esperança',
-    text: 'Eu já tinha desistido do asfalto. O Sogrão foi na minha porta, tirou foto do buraco e não parou de cobrar. Hoje meu neto anda de bicicleta na rua.',
+    name: 'Advogado há mais de 30 anos',
+    role: 'Família e ofício',
+    text: 'Casado com Ângela Batista e pai de três filhos. A banca de advogado e a vida em Campinas andam juntas há três décadas.',
   },
   {
-    name: 'Marcos, comerciante',
-    role: 'Padaria do Centro',
-    text: 'Iluminação da praça mudou o movimento. A loja fecha mais tarde e a gente se sente gente de novo. Isso é vereador que trabalha.',
+    name: '100 mil assinaturas',
+    role: 'Delegacia de combate à pedofilia',
+    text: 'Mobilização para Campinas ter delegacia especializada no combate à pedofilia e à violência sexual contra homem, criança e adolescente.',
   },
   {
-    name: 'Professora Helena',
-    role: 'EM Professor Lima',
-    text: 'Ele sentou com o grêmio, com a merendeira e com a direção. Não veio pedir foto. Veio perguntar o que faltava. Raro isso.',
+    name: 'Vereador duas vezes',
+    role: 'Mais de 30 leis em Campinas',
+    text: 'Dois mandatos na Câmara, correição da Casa, Comissão da Criança e da Constituição e Legalidade. Também foi administrador regional e diretor da COAR.',
   },
 ] as const
 
 export const faqs = [
   {
-    q: 'Moro em outro bairro. O Sogrão atende mesmo assim?',
-    a: 'Sim. A campanha é da cidade inteira. O comitê recebe presencialmente e o WhatsApp funciona para recado, denúncia de obra e pedido de visita — de qualquer região.',
+    q: 'O Elcio já foi vereador. O que ele fez de concreto?',
+    a: 'Foi vereador duas vezes. Presidiu por quatro anos a Comissão da Criança e do Adolescente, foi corregedor da Câmara, membro da Comissão de Constituição e Legalidade e autor de mais de 30 leis — entre elas o banco de ração, a semana de enfrentamento à pedofilia e a Constituição e o CDC em braile.',
   },
   {
-    q: 'Vereador resolve asfalto e UBS? Isso não é da prefeitura?',
-    a: 'A obra é do Executivo. O vereador fiscaliza, protocola, convoca secretário e denuncia atraso. Sem cobrança na Câmara, o pedido da rua some na fila. É exatamente para isso que o Sogrão se candidata.',
+    q: 'Por que deputado federal, se o trabalho dele foi na Câmara Municipal?',
+    a: 'Quem já legislou em Campinas sabe o que a cidade e a região precisam levar a Brasília: Hospital Metropolitano, farmácia solidária e mobilidade entre municípios. O currículo municipal vira pauta federal.',
   },
   {
-    q: 'Como eu ajudo a campanha sem ser cabo eleitoral?',
-    a: 'Três gestos bastam: compartilhe o site, chame o grupo da família no WhatsApp e deixe seu nome no comitê. Santinho, carreata e boca de urna a gente organiza com quem puder.',
+    q: 'O que é a farmácia solidária?',
+    a: 'É a luta para aproximar medicamento de uso contínuo de quem não consegue pagar. No material de campanha, é uma das três frentes do mandato federal, junto com o Hospital Metropolitano e o transporte regional.',
   },
   {
-    q: 'Os honorários… quer dizer, a campanha pede dinheiro?',
-    a: 'Doação eleitoral segue a lei. Não pedimos PIX informal. Quem quiser contribuir oficialmente recebe orientação do comitê, com recibo e prestação de contas.',
+    q: 'Ele só atuou na Câmara?',
+    a: 'Não. É advogado há mais de 30 anos, foi administrador regional e depois diretor da COAR, a Coordenação das Administrações Regionais e Subprefeituras de Campinas. Mandato e gestão de distrito no mesmo currículo.',
   },
   {
-    q: 'E depois da eleição, some?',
-    a: 'O compromisso público é prestação de contas todo mês no Instagram e plantão semanal no comitê. Se sumir, vocês terão como cobrar — por escrito e em rede.',
+    q: 'Como eu ajudo a campanha?',
+    a: 'Compartilhe o site, chame o grupo da família no WhatsApp e deixe seu nome no formulário do comitê. Material de rua a gente organiza com quem puder aparecer.',
   },
   {
     q: 'Posso levar um problema agora, antes de votar?',
-    a: 'Pode e deve. A campanha não substitui ouvidoria, mas o Sogrão já encaminha denúncia de UBS, escola e rua. Mande no WhatsApp com foto e ponto de referência.',
+    a: 'Pode. Mande no WhatsApp com foto e ponto de referência — UBS, escola, semáforo, desaparecimento ou denúncia de violência. A campanha encaminha; não substitui polícia nem Conselho Tutelar em caso urgente.',
   },
 ] as const
 
-export const candidatePhoto = '/images/candidato.jpg'
+export const candidatePhoto = '/images/candidato.png'
 
 export const communityPhoto = '/images/comunidade.jpg'
 
@@ -263,4 +404,4 @@ export function whatsappLink(message: string) {
 }
 
 export const defaultWhatsappMessage =
-  `Olá, Sogrão! Vim pelo site da campanha e quero conversar. Número ${campaign.numberDisplay}.`
+  `Olá, Elcio! Vim pelo site da campanha e quero conversar. Número ${campaign.numberDisplay}.`

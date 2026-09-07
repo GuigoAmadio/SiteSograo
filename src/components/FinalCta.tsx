@@ -10,7 +10,7 @@ export function FinalCta() {
   function onSubmit(event: FormEvent) {
     event.preventDefault()
     const message = [
-      `Olá, Sogrão! Quero entrar na campanha.`,
+      `Olá, Elcio! Quero entrar na campanha.`,
       `Nome: ${name}`,
       `Bairro: ${bairro}`,
       phone ? `WhatsApp: ${phone}` : '',

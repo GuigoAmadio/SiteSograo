@@ -40,7 +40,7 @@ export function Footer() {
           <p>
             Propaganda eleitoral. Eleições {campaign.year}. Esta página tem caráter informativo da campanha de{' '}
             {campaign.fullName} ({campaign.nickname}), {campaign.office.toLowerCase()}, número {campaign.numberDisplay}.
-            CNPJ de campanha e prestação de contas devem ser atualizados conforme regras do TSE/TRE.
+            CNPJ {campaign.cnpj}.
           </p>
           <p>
             © {campaign.year} {campaign.nickname}. Todos os direitos reservados.
