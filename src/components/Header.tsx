@@ -1,3 +1,4 @@
+import { brand } from '../assets/brand'
 import { campaign, defaultWhatsappMessage, nav, whatsappLink } from '../data/campaign'
 import { NavLink, usePath } from '../lib/route'
 import { MenuIcon, WhatsAppIcon } from './Icons'
@@ -19,12 +20,8 @@ export function Header() {
     <header className={`site-header${scrolled ? ' scrolled' : ''}`}>
       <div className="container header-inner">
         <NavLink className="brand" href="/" aria-label={`${campaign.nickname} campanha`} onNavigate={() => setOpen(false)}>
-          <span className="brand-mark">EL</span>
-          <span className="brand-copy">
-            <strong>
-              {campaign.firstName} <b>{campaign.lastName}</b>
-            </strong>
-            <span>{campaign.office}</span>
+          <span className="brand-lockup">
+            <img src={brand.avante} alt={campaign.party} />
           </span>
         </NavLink>
 

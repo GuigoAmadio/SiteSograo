@@ -1,3 +1,5 @@
+import { brand } from '../assets/brand'
+
 /** Troque WhatsApp, Instagram e fotos em /public/images. */
 export const campaign = {
   nickname: "Elcio Batista",
@@ -9,11 +11,12 @@ export const campaign = {
   numberDisplay: "7026",
   party: "Avante",
   city: "Campinas",
-  slogan: "Trabalho de Verdade. Resultados que Transformam.",
+  slogan: "Campinas sempre à frente",
+  tagline: "Uma Campinas mais forte para todos",
   headline: "Dr. Elcio Batista para deputado federal",
   subheadline:
-    "Advogado há mais de 30 anos. Vereador duas vezes em Campinas, autor de mais de 30 leis. Articulou 100 mil assinaturas pela delegacia de combate à pedofilia e à violência sexual. Agora disputa a Câmara Federal por Campinas e pela região.",
-  instagram: "elcio.oficial",
+    "Advogado há mais de 30 anos, vereador duas vezes em Campinas e autor de mais de 30 leis. Articulou 100 mil assinaturas pela delegacia de combate à pedofilia e à violência sexual.",
+  instagram: "elcio_batista_oficial",
   instagramUrl: "https://www.instagram.com/elcio_batista_oficial/",
   whatsapp: "5519983202828",
   email: "advogado@elciobatista.com",
@@ -41,63 +44,63 @@ export const nav = [
 
 export const works = [
   {
-    tag: "Proteção",
-    short: "Delegacia",
-    icon: "shield",
-    title: "100 mil assinaturas pela delegacia de combate à pedofilia",
-    text: "Como vereador, articulou abaixo-assinado para trazer a Campinas a delegacia de combate à pedofilia e à violência sexual contra homem, criança e adolescente.",
-    image: "/images/assistencia.jpg",
-    year: "Mandato",
-    url: "",
-  },
-  {
-    tag: "Infância",
-    short: "Comissão",
-    icon: "child",
-    title: "Presidência da Comissão da Criança e do Adolescente",
-    text: "Conduziu por quatro anos o colegiado da Câmara de Campinas com foco em proteção integral — não em foto de sessão solene.",
-    image: "/images/educacao.jpg",
-    year: "4 anos",
-    url: "",
-  },
-  {
-    tag: "Leis",
-    short: "30+ leis",
-    icon: "law",
-    title: "Mais de 30 leis: ração, braile e semana de enfrentamento",
-    text: "Autor do banco de ração, da Semana de Combate e Enfrentamento à Pedofilia, da Bíblia, da Constituição Federal e do Código de Defesa do Consumidor em braile, e da lei que obriga máscara para quem manuseia alimento.",
-    image: "/images/obra.jpg",
-    year: "Câmara",
-    url: "",
-  },
-  {
     tag: "Acessibilidade",
-    short: "Semáforos",
+    short: "Semáforo sonoro",
     icon: "traffic",
     title: "Semáforos sonoros para pessoas com deficiência visual",
     text: "Trouxe para Campinas o semáforo que avisa no ouvido quem não enxerga o verde. Travessia com dignidade, não com sorte.",
     image: "/images/ambiente.jpg",
-    year: "Cidade",
+    year: "2010",
     url: "",
   },
   {
-    tag: "Pessoas",
-    short: "Desaparecidos",
-    icon: "search",
-    title: "Cadastro único municipal de pessoas desaparecidas",
-    text: "Criou em Campinas o cadastro para a família deixar de bater de porta em porta sem um registro oficial que una a rede de busca.",
-    image: "/images/comunidade.jpg",
-    year: "Lei",
+    tag: "Proteção",
+    short: "Delegacia da criança",
+    icon: "shield",
+    title: "100 mil assinaturas pela delegacia de combate à pedofilia",
+    text: "Como vereador, articulou abaixo-assinado para trazer a Campinas a delegacia de combate à pedofilia e à violência sexual contra homem, criança e adolescente.",
+    image: "/images/assistencia.jpg",
+    year: "2011",
     url: "",
   },
   {
     tag: "Fome",
-    short: "Alimentos",
+    short: "Banco de alimentos",
     icon: "food",
     title: "Banco de alimentos: sobra do CEASA na mesa de quem precisa",
     text: "Criador do projeto que destina as sobras do CEASA às comunidades carentes — comida que ia para o lixo passa a ir para o prato.",
     image: "/images/ig1.jpg",
-    year: "CEASA",
+    year: "2012",
+    url: "",
+  },
+  {
+    tag: "Infância",
+    short: "Comissão da infância",
+    icon: "child",
+    title: "Presidência da Comissão da Criança e do Adolescente",
+    text: "Conduziu por quatro anos o colegiado da Câmara de Campinas com foco em proteção integral — não em foto de sessão solene.",
+    image: "/images/educacao.jpg",
+    year: "2013",
+    url: "",
+  },
+  {
+    tag: "Pessoas",
+    short: "Cadastro de desaparecidos",
+    icon: "search",
+    title: "Cadastro único municipal de pessoas desaparecidas",
+    text: "Criou em Campinas o cadastro para a família deixar de bater de porta em porta sem um registro oficial que una a rede de busca.",
+    image: "/images/comunidade.jpg",
+    year: "2015",
+    url: "",
+  },
+  {
+    tag: "Leis",
+    short: "Mais de 30 leis",
+    icon: "law",
+    title: "Mais de 30 leis: ração, braile e semana de enfrentamento",
+    text: "Autor do banco de ração, da Semana de Combate e Enfrentamento à Pedofilia, da Bíblia, da Constituição Federal e do Código de Defesa do Consumidor em braile, e da lei que obriga máscara para quem manuseia alimento.",
+    image: "/images/obra.jpg",
+    year: "2016",
     url: "",
   },
 ] as const;
@@ -241,6 +244,7 @@ export const proposals = [
     text: "Mais estrutura, especialidades e atendimento digno para a região.",
     detail:
       "Campinas e as cidades vizinhas não podem depender de fila e de deslocamento para ter especialidade. Como deputado federal, o Elcio vai lutar por estrutura, mais especialidades e atendimento digno no Hospital Metropolitano — hospital de verdade para quem mora na região, não só no mapa da campanha.",
+    video: "/videos/chega-de-omissao.mp4",
   },
   {
     num: "02",
@@ -249,6 +253,7 @@ export const proposals = [
     text: "Medicamento de uso contínuo para quem mais precisa.",
     detail:
       "Remédio contínuo não pode ser luxo. A farmácia solidária é a frente para aproximar medicamento de quem não consegue pagar o preço da rua. O Elcio já tratou isso no mandato municipal; agora a pauta sobe para Brasília, com foco em acesso, regularidade e quem está no fim da fila.",
+    video: "/videos/direitos-trabalhistas.mp4",
   },
   {
     num: "03",
@@ -257,6 +262,7 @@ export const proposals = [
     text: "Integração entre cidades e transporte de qualidade.",
     detail:
       "Quem vive na região metropolitana perde hora em ônibus ruim e em cidade que não conversa com a outra. A proposta é investimento, integração entre municípios e qualidade no deslocamento — trabalho, estudo e saúde no mesmo corredor, não três passagens e três filas.",
+    video: "/videos/escala-6x1.mp4",
   },
 ] as const;
 
@@ -402,7 +408,7 @@ export const faqs = [
   },
 ] as const;
 
-export const candidatePhoto = "/images/candidato.png";
+export const candidatePhoto = brand.photo
 
 export const communityPhoto = "/images/comunidade.jpg";
 

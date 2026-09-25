@@ -1,3 +1,4 @@
+import { brand } from '../assets/brand'
 import {
   campaign,
   candidatePhoto,
@@ -11,16 +12,11 @@ export function Hero() {
   return (
     <section className="hero" id="inicio">
       <div className="container hero-grid">
-        <div>
-          <div className="hero-kicker">
-            <b>{campaign.numberDisplay}</b>
-            {campaign.office} · {campaign.city}
-          </div>
-          <h1>
-            Dr. {campaign.firstName} <em>{campaign.lastName}</em>
-            <span> para deputado federal</span>
-          </h1>
-          <p>{campaign.subheadline}</p>
+        <div className="hero-copy">
+          <img className="hero-art hero-slogan-art" src={brand.slogan} alt={campaign.slogan} />
+          <h1 className="visually-hidden">{campaign.fullName} deputado federal</h1>
+          <img className="hero-art hero-wordmark" src={brand.wordmark} alt={campaign.fullName} />
+          <p className="hero-intro">{campaign.subheadline}</p>
           <div className="hero-actions">
             <a className="btn btn-white" href={whatsappLink(defaultWhatsappMessage)} target="_blank" rel="noreferrer">
               <WhatsAppIcon />
@@ -34,10 +30,7 @@ export function Hero() {
 
         <div className="hero-photo">
           <img src={candidatePhoto} alt={campaign.fullName} />
-          <div className="hero-badge">
-            <small>Vote</small>
-            <strong>{campaign.numberDisplay}</strong>
-          </div>
+          <img className="hero-number" src={brand.number} alt={campaign.numberDisplay} />
         </div>
       </div>
     </section>

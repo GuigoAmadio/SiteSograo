@@ -1,4 +1,3 @@
-import { FinalCta } from "../components/FinalCta";
 import { PageHero } from "../components/PageHero";
 import { ProjectBoard } from "../components/ProjectBoard";
 
@@ -10,7 +9,6 @@ export function ProjectsPage() {
         lead="O que o Elcio já fez em Campinas, separado por tipo: lei, ato, serviço na rua, cargo e gestão."
       />
       <ProjectBoard />
-      <FinalCta />
     </>
   );
 }

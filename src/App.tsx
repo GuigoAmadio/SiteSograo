@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { WhatsAppFloat } from './components/WhatsAppFloat'
 import { NavLink, usePath } from './lib/route'
 import { HomePage } from './pages/HomePage'
+import { InstagramPage } from './pages/InstagramPage'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { ProposalsPage } from './pages/ProposalsPage'
 
@@ -11,6 +12,7 @@ const titles: Record<string, string> = {
   '/': 'Dr. Elcio Batista para deputado federal — 7026',
   '/projetos': 'Projetos | Elcio Batista 7026',
   '/propostas': 'Propostas | Elcio Batista 7026',
+  '/instagram': 'Instagram | Elcio Batista 7026',
 }
 
 export default function App() {
@@ -20,7 +22,16 @@ export default function App() {
     document.title = titles[path] ?? titles['/']
   }, [path])
 
-  const page = path === '/projetos' ? <ProjectsPage /> : path === '/propostas' ? <ProposalsPage /> : <HomePage />
+  const page =
+    path === '/projetos' ? (
+      <ProjectsPage />
+    ) : path === '/propostas' ? (
+      <ProposalsPage />
+    ) : path === '/instagram' ? (
+      <InstagramPage />
+    ) : (
+      <HomePage />
+    )
 
   return (
     <>
@@ -28,7 +39,7 @@ export default function App() {
         Ir para o conteúdo
       </NavLink>
       <Header />
-      <main>{page}</main>
+      <main className={path === '/' ? 'home-surface' : undefined}>{page}</main>
       <Footer />
       <WhatsAppFloat />
     </>

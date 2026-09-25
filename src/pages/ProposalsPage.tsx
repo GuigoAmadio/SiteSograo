@@ -1,4 +1,3 @@
-import { FinalCta } from '../components/FinalCta'
 import { PageHero } from '../components/PageHero'
 import { ProposalCards } from '../components/ProposalCards'
 
@@ -10,7 +9,6 @@ export function ProposalsPage() {
         lead="Hospital Metropolitano, farmácia solidária e mobilidade regional. Clique no card e leia embaixo."
       />
       <ProposalCards />
-      <FinalCta />
     </>
   )
 }
