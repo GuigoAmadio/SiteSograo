@@ -89,7 +89,10 @@ export function Footer() {
           <div className="footer-aside">
             <div className="footer-block">
               <h3>Contato</h3>
-              <a className="footer-link" href={`https://wa.me/${campaign.whatsapp}`}>
+              <a
+                className="footer-link"
+                href={`https://wa.me/${campaign.whatsapp}`}
+              >
                 <WhatsAppIcon />
                 WhatsApp
               </a>
@@ -97,9 +100,13 @@ export function Footer() {
                 <MailIcon />
                 {campaign.email}
               </a>
-              <a className="footer-link" href={campaign.instagramUrl} target="_blank" rel="noreferrer">
-                <InstagramIcon />
-                @{campaign.instagram}
+              <a
+                className="footer-link"
+                href={campaign.instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InstagramIcon />@{campaign.instagram}
               </a>
             </div>
             <div className="footer-block">

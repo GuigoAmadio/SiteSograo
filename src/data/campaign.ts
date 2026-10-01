@@ -268,6 +268,45 @@ export const proposals = [
 
 export const instagramVideos = [
   {
+    id: "menos-pior",
+    src: "/videos/menos-pior.mp4",
+    caption: "Não vote no “menos pior”. Vote com consciência.",
+  },
+  {
+    id: "identidade",
+    src: "/videos/identidade-proposito.mp4",
+    caption:
+      "Temos identidade de propósito: um Brasil pacificado, produtivo, organizado e soberano.",
+  },
+  {
+    id: "marcao",
+    src: "/videos/marcao.mp4",
+    caption:
+      "Tem encontros que fazem bem. O Marcão é amigo, daqueles de longa data.",
+  },
+  {
+    id: "via-norte",
+    src: "/videos/parque-via-norte.mp4",
+    caption:
+      "Hoje voltei ao Parque Via Norte ao lado do Fernando, paisagista e amigo que conhece essa região.",
+  },
+  {
+    id: "biografia",
+    src: "/videos/biografia-candidato.mp4",
+    caption: "Conhecer a biografia do candidato é importante.",
+  },
+  {
+    id: "medicamento",
+    src: "/videos/medicamento-validade.mp4",
+    caption:
+      "Medicamento dentro da validade indo para o lixo, enquanto outra pessoa tem dificuldade para manter o tratamento.",
+  },
+  {
+    id: "reel-campanha",
+    src: "/videos/reel-campanha.mp4",
+    caption: "Vídeo da campanha.",
+  },
+  {
     id: "escala",
     src: "/videos/escala-6x1.mp4",
     caption: "Escala 6x1: o que você acha?",

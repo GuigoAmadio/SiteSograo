@@ -1,8 +1,8 @@
-import { FAQ } from '../components/FAQ'
-import { Hero } from '../components/Hero'
-import { Instagram } from '../components/Instagram'
-import { ProposalShowcase } from '../components/ProposalShowcase'
-import { Testimonials } from '../components/Testimonials'
+import { FAQ } from "../components/FAQ";
+import { Hero } from "../components/Hero";
+import { Instagram } from "../components/Instagram";
+import { ProposalShowcase } from "../components/ProposalShowcase";
+import { Testimonials } from "../components/Testimonials";
 
 export function HomePage() {
   return (
@@ -15,5 +15,5 @@ export function HomePage() {
       <Testimonials />
       <FAQ />
     </>
-  )
+  );
 }
